@@ -2,7 +2,7 @@
   "format": "companion.public-snapshot.v1",
   "date": "2026-10-14",
   "historyIncluded": false,
-  "licenseStatus": "pending-owner-approval",
+  "license": "MIT",
   "files": [
     {
       "path": ".env.example",
@@ -26,7 +26,7 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "83ba85249d3a0432ab1220cf5b8f008f24ee6bd8fa98e0a1c3c4266d2c99c625"
+      "sha256": "6ccd2ca3c04f77f4045dd5c3d7dc3891fa5112999cde0d91e2cb81e5d5ffca5f"
     },
     {
       "path": "codex-marketplace/.agents/plugins/marketplace.json",
@@ -34,7 +34,7 @@
     },
     {
       "path": "codex-marketplace/companion-body/.codex-plugin/plugin.json",
-      "sha256": "c6720f52b2839c96ec5109d776f3d6f613e5de05e1826960e6c0db955c98835c"
+      "sha256": "669088e52893be8c93f5d0a94861c5da8129a664c1509cf95515d944c8cff513"
     },
     {
       "path": "codex-marketplace/companion-body/.mcp.json.example",
@@ -454,7 +454,7 @@
     },
     {
       "path": "docs/design-sources.md",
-      "sha256": "12772312df6d09829dec12fa8d34373f0fe4e2c7e9056951eef7d9757d264048"
+      "sha256": "578355a307565e1143ebe2957880d5b2b8a253c871cfac22fb219c5bdddcbf27"
     },
     {
       "path": "docs/public-scope.md",
@@ -467,6 +467,10 @@
     {
       "path": "docs/tool-bridge.md",
       "sha256": "7a5a2581dc6df257ed39c639ea4ad4e26761c9ec52091255d6a72ed019e622a6"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "f4a20223b11a5b75560af8f783e78c75e0ce12ebfc25fc9857ee0b17d0c73d39"
     },
     {
       "path": "NOTICE",
@@ -482,7 +486,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "f32b17a646b3595686397807397316b52517c2e03bf67749f79a7ecb52a173e0"
+      "sha256": "96a4aa5be825373720f439d3d32d60026637dbeab70cbb7b58e9d9772ea0080f"
     },
     {
       "path": "requirements-test.txt",
@@ -750,7 +754,7 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "sha256": "f0713420fd3c1ba480a14f92acee82b66359260189dd17b4cfaeb79865a149c8"
+      "sha256": "2553b371d15cb0d35beaad16dac88eb769423fdfe27ac99255f1fe5d3027eaa5"
     }
   ]
 }

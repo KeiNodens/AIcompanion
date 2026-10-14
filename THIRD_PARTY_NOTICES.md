@@ -50,4 +50,4 @@ Hermes、Codex、ChatMock、Discord、音楽アプリは別途導入する連携
 
 ## 設計参照元の帰属
 
-[設計参照元と独自実装の方針](docs/design-sources.md)と[NOTICE](NOTICE)に、Engram仕様のCC-BY-4.0帰属、NOTICEを持つ設計参照元、検索手法の参考元を記載しています。自作コードのMIT案と、参照元の権利は分けて扱います。
+[設計参照元と独自実装の方針](docs/design-sources.md)と[NOTICE](NOTICE)に、Engram仕様のCC-BY-4.0帰属、NOTICEを持つ設計参照元、検索手法の参考元を記載しています。自作コードのMITライセンスと、参照元の権利は分けて扱います。

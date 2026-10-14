@@ -3,6 +3,7 @@
 **記憶を持ち、会話から作業へつなぐ日本語AIコンパニオン。**
 
 [![CI](https://github.com/KeiNodens/AIcompanion/actions/workflows/ci.yml/badge.svg)](https://github.com/KeiNodens/AIcompanion/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Discordやブラウザで話しかけ、過去の文脈を使った相談、リマインダー、外部エージェントへの作業依頼と成果の受け取りを扱う、個人開発のプロジェクトです。
 
@@ -101,6 +102,6 @@ Discord・Hermes・Codex連携は、別途インストール・認証・設定�
 
 本体、テスト、運用スクリプト、連携プラグイン、汎用の設定例と文書を含みます。会話・記憶・ログ・個人プロフィール・鍵・開発履歴・人格原文・調査用資料は含みません。[公開方針](docs/public-scope.md)を参照してください。
 
-自作部分のMITライセンス案は公開前の確認待ちです。現在は非公開の検証用コピーです。依存ライブラリ、外部ツール、追加取得するモデルにはそれぞれの条件が適用されます。[依存とモデルの条件](THIRD_PARTY_NOTICES.md)を確認してください。モデル重みと第三者のソースは同梱していません。
+自作のコードと文書は[MIT License](LICENSE)です。依存ライブラリ、外部ツール、追加取得するモデルにはそれぞれの条件が適用されます。[依存とモデルの条件](THIRD_PARTY_NOTICES.md)を確認してください。モデル重みと第三者のソースは同梱していません。
 
 脆弱性の報告は[SECURITY.md](SECURITY.md)、変更履歴は[CHANGELOG.md](CHANGELOG.md)を参照してください。
