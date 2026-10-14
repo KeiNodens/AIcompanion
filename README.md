@@ -84,7 +84,7 @@ Discord・Hermes・Codex連携は、別途インストール・認証・設定�
 .venv\Scripts\python -m unittest discover -s tests -p "test_*.py"
 ~~~
 
-最新結果は[GitHub Actions](https://github.com/KeiNodens/AIcompanion/actions)を参照してください。公開用コピーの準備時には、作業環境のPython起動が制限され、テストをローカルで再実行できていません。
+最新結果は[GitHub Actions](https://github.com/KeiNodens/AIcompanion/actions)を参照してください。CIはWindowsのクリーン環境で実行し、依存関係の解決も確認します。
 
 ## コードを読む
 
