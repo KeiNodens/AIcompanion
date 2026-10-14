@@ -1,4 +1,5 @@
 """hermes_conf.py / hermes_check.py — Hermes config 読取と lint のテスト"""
+import os
 import textwrap
 import unittest
 from unittest import mock
@@ -108,8 +109,11 @@ class HermesConfTest(unittest.TestCase):
             self.hc.load_config()["model"]["base_url"],
             "http://localhost:8788/v1",
         )
+        previous_mtime_ns = p.stat().st_mtime_ns
         p.write_text("model:\n  base_url: http://localhost:9999/v1\n",
                      encoding="utf-8")
+        # Windows may keep the same mtime for rapid same-size rewrites.
+        os.utime(p, ns=(p.stat().st_atime_ns, previous_mtime_ns + 1_000_000_000))
         self.assertEqual(
             self.hc.load_config()["model"]["base_url"],
             "http://localhost:9999/v1",

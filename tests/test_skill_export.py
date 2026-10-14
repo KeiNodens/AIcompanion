@@ -238,6 +238,13 @@ class SkillUpstreamTest(unittest.TestCase):
             res2 = self.se.check_upstream(force=True)
         self.assertEqual(res2["flagged"], [])
 
+    def test_first_check_is_not_throttled_on_recent_boot(self):
+        self._active_imported("cook")
+        self.se.sync_export()
+        with mock.patch.object(self.se.time, "monotonic", return_value=10), self._patch_body_skills([]):
+            res = self.se.check_upstream()
+        self.assertEqual(res["flagged"], ["cook"])
+
     def test_interval_throttle(self):
         res = self.se.check_upstream()
         res2 = self.se.check_upstream()

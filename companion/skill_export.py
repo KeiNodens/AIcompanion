@@ -198,7 +198,7 @@ def check_upstream(force: bool = False) -> dict:
         return {**res, "skipped": "export disabled"}
     if not force:
         interval = max(SKILL_UPSTREAM_INTERVAL_MIN, 0.1) * 60
-        if time.monotonic() - _last_upstream_check < interval:
+        if _last_upstream_check and time.monotonic() - _last_upstream_check < interval:
             return {**res, "skipped": "interval"}
     _last_upstream_check = time.monotonic()
     try:

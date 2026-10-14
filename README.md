@@ -2,7 +2,7 @@
 
 **記憶を持ち、会話から作業へつなぐ日本語AIコンパニオン。**
 
-[![CI](https://github.com/KeiNodens/AIcompanoion/actions/workflows/ci.yml/badge.svg)](https://github.com/KeiNodens/AIcompanoion/actions/workflows/ci.yml)
+[![CI](https://github.com/KeiNodens/AIcompanion/actions/workflows/ci.yml/badge.svg)](https://github.com/KeiNodens/AIcompanion/actions/workflows/ci.yml)
 
 Discordやブラウザで話しかけ、過去の文脈を使った相談、リマインダー、外部エージェントへの作業依頼と成果の受け取りを扱う、個人開発のプロジェクトです。
 
@@ -57,8 +57,8 @@ flowchart LR
 WindowsとPython 3.12以降を前提とします。開発元のPythonは3.14で、CIは3.12・3.14を対象にしています。会話にはローカルのOpenAI互換エンドポイントが必要です。現行クライアントは認証値としてunusedを送る実装なので、有料クラウドAPIへ直接つなぐ設定例は提供していません。
 
 ~~~powershell
-git clone https://github.com/KeiNodens/AIcompanoion.git
-cd AIcompanoion
+git clone https://github.com/KeiNodens/AIcompanion.git
+cd AIcompanion
 py -m venv .venv
 .venv\Scripts\python -m pip install -r requirements.txt
 Copy-Item .env.example .env
@@ -84,7 +84,7 @@ Discord・Hermes・Codex連携は、別途インストール・認証・設定�
 .venv\Scripts\python -m unittest discover -s tests -p "test_*.py"
 ~~~
 
-最新結果は[GitHub Actions](https://github.com/KeiNodens/AIcompanoion/actions)を参照してください。公開用コピーの準備時には、作業環境のPython起動が制限され、テストをローカルで再実行できていません。
+最新結果は[GitHub Actions](https://github.com/KeiNodens/AIcompanion/actions)を参照してください。公開用コピーの準備時には、作業環境のPython起動が制限され、テストをローカルで再実行できていません。
 
 ## コードを読む
 
