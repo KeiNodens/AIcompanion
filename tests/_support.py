@@ -33,6 +33,8 @@ def fake_config(tmp: Path) -> types.ModuleType:
     cfg.LLM_MODEL = "test-model"
     cfg.REASONING_EFFORT = "low"
     cfg.EFFORT_CHOICES = ("none", "minimal", "low", "medium", "high", "xhigh")
+    # Existing test fixtures exercise the explicit legacy/migration paths.
+    cfg.DEFAULT_MEMORY_AUTHORITY = "mem0"
     cfg.MEMORY_USER = "me"
     cfg.MEMORY_AGENT = "companion"
     cfg.OWNER_USER_ID = 12345

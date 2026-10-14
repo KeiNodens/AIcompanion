@@ -27,6 +27,7 @@ EMBED_IDLE_SEC = int(os.getenv("EMBED_IDLE_SEC", "30"))
 EMBED_BATCH = int(os.getenv("EMBED_BATCH", "16"))
 ALLOWED_CHANNEL_ID = int(os.getenv("ALLOWED_CHANNEL_ID", "0"))
 NOTIFY_CHANNEL_ID = int(os.getenv("NOTIFY_CHANNEL_ID", "0"))
+DEFAULT_MEMORY_AUTHORITY = "canonical"
 MEMORY_USER = os.getenv("MEMORY_USER", "me")
 MEMORY_AGENT = os.getenv("MEMORY_AGENT", "companion")
 HISTORY_LEN = int(os.getenv("HISTORY_LEN", "3"))

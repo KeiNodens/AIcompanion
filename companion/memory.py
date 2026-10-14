@@ -10,6 +10,7 @@ from mem0 import Memory
 
 from .config import (
     DATA_DIR,
+    DEFAULT_MEMORY_AUTHORITY,
     EMBED_DIMS,
     EMBED_IDLE_SEC,
     EMBED_LAZY,
@@ -73,9 +74,9 @@ def authority() -> str:
         return env
     try:
         from . import db
-        return db.load_state().get("memory_authority") or "mem0"
+        return db.load_state().get("memory_authority") or DEFAULT_MEMORY_AUTHORITY
     except Exception:
-        return "mem0"
+        return DEFAULT_MEMORY_AUTHORITY
 
 
 def _grace_active() -> bool:

@@ -1,0 +1,25 @@
+companion
+Copyright (c) 2026 KeiNodens
+
+Design references and acknowledgements:
+
+Open Engram Standard by plur-ai contributors:
+https://github.com/plur-ai/engram-spec
+Specification text: CC BY 4.0
+https://creativecommons.org/licenses/by/4.0/
+Concepts and terminology are mapped to companion's independent pcore.pack.v1
+format. No upstream specification text, JSON Schemas or reference code is
+bundled. This is not a claim of Open Engram conformance or endorsement.
+
+Additional design references:
+- dreamd / Botzr: https://github.com/botzrDev/dreamd
+- myco-brain: https://github.com/thegoodguysla/myco-brain
+- experience-hub: https://github.com/xwj123456/experience-hub
+- MarsNMe: https://github.com/Marsmanleo/MarsNMe
+- Hindsight: https://github.com/vectorize-io/hindsight
+- Mem++: https://github.com/AIDAChip-Inc/mem-plus-plus
+
+These are acknowledgements of design references, not a statement that their
+source code has been redistributed. Third-party dependencies and model weights
+retain their respective terms. See THIRD_PARTY_NOTICES.md and
+docs/design-sources.md.

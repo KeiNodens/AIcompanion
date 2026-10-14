@@ -48,9 +48,9 @@ def _enabled() -> bool:
     auth = os.getenv("MEMORY_AUTHORITY")
     if not auth:
         try:
-            auth = db.load_state().get("memory_authority") or "mem0"
+            auth = db.load_state().get("memory_authority") or config.DEFAULT_MEMORY_AUTHORITY
         except Exception:
-            auth = "mem0"
+            auth = config.DEFAULT_MEMORY_AUTHORITY
     return auth in ("dual_run", "canonical")
 
 
