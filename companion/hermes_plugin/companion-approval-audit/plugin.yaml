@@ -1,0 +1,7 @@
+name: companion-approval-audit
+version: 1.0.0
+description: "Forward Hermes approval hook events to the companion Core audit endpoint (/v1/bridge/approval_event). Observer only — never alters approval decisions. runtime-hermes-tooling-impl.md R5b."
+author: "companion"
+provides_hooks:
+  - pre_approval_request
+  - post_approval_response

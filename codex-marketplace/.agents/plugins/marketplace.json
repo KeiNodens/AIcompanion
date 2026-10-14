@@ -1,0 +1,12 @@
+{
+  "name": "companion-local",
+  "plugins": [
+    {
+      "name": "companion-body",
+      "source": {
+        "path": "./companion-body",
+        "source": "local"
+      }
+    }
+  ]
+}

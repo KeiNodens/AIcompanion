@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "companion": {
+      "command": "<COMPANION_ROOT>/.venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "companion.mcp_stdio"
+      ],
+      "cwd": "<COMPANION_ROOT>",
+      "env": {
+        "PYTHONPATH": "<COMPANION_ROOT>"
+      },
+      "env_vars": [
+        "PATH",
+        "SYSTEMROOT",
+        "USERPROFILE",
+        "LOCALAPPDATA",
+        "COMPANION_MCP_KEY",
+        "COMPANION_MCP_URL",
+        "HERMES_HOME"
+      ],
+      "startup_timeout_sec": 30,
+      "tool_timeout_sec": 180
+    }
+  }
+}

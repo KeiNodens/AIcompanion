@@ -1,0 +1,28 @@
+name: CI
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.12", "3.14"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: requirements-test.txt
+      - name: Install test dependencies
+        run: python -m pip install -r requirements-test.txt
+      - name: Check Python syntax
+        run: python -m compileall -q companion tests scripts bot.py
+      - name: Verify kernel manifest
+        run: python scripts/kernel_manifest.py check
+      - name: Run isolated tests
+        run: python -m unittest discover -s tests -p "test_*.py"

@@ -1,0 +1,26 @@
+{
+  "algo": "sha256",
+  "files": {
+    "__init__.py": "18092ea67a997977742f9cad7346abbf6d49e48607465e481b28ca6450f0dc3c",
+    "admit.py": "2f913e9ec00075f02d728b889f4862adadc04c41672c24f1c1cb25d99449da6c",
+    "approval.py": "cf7017d8344602564fd920d21c9e1f880198d95db8b8ef41042dcc29d8f03593",
+    "canon.py": "daa5f7fdc3c85bf60a3e480cf234d56bfffc784f244bd3be10f19961166b7958",
+    "envelope.py": "b7844c4568792930b316ee13afcef682d703ad0b25d58b849d4c91b3262f5b88",
+    "events.py": "3c87a935eea1152c1cf9d1b0b2a977333c2804fa367cde6c18f36a37ed6104f4",
+    "evidence.py": "3ff02665877257526c88d9f6eaa90d6af33730f556e550fc152d482cacfdddc4",
+    "extract.py": "f6e7671273ce9e8e7169117c5b80209fe6253721ebde7f6941ec33dff6516fca",
+    "fold.py": "a1b712ce89d4afa7e6e092da93adabad47cbf0ffd459695e4b6b47afd19668bd",
+    "ids.py": "344ea79d347d73eb462b2a5c14767bf821440e180b430a378ae313c554089e4f",
+    "migration.py": "9cfef66f7a36cd7ebf551257bbadc786bafff93149bc2ad4f93032e0bebaaf44",
+    "oracle.py": "f794dc16e9dc2ee87089f746ab6361595bace7ee83c0d9c7d3eec815525b618b",
+    "pack.py": "868846dd276493c7255149f239c8f29d56eec0fe90082d431f091adab9b0b09b",
+    "rules.py": "3eebed0dff60778de918f47ab55f829669b3bdf04d6112aacd2595b9ee332097",
+    "schema.py": "fbe2c347b9301dced80ed066da56ab33706c27bde9141c7f216299e64401e8f5",
+    "supply.py": "651b093868a90e5e3490f8a21d8a7a168094d6fea3a28f1965fc9cee276d54da",
+    "tier.py": "d41b9472bd59a1654fa4393a54759fc2d910b5a76536a3a975261b24001c2511",
+    "vocab.py": "86a6ec47ea2f79450be00b88aec15b6a7e60c0c6bf24baef693eb24753565ceb",
+    "writer.py": "3240844b078a1aaa9410eb690778b113abd7cff86d3c0799fed6823e7078188a"
+  },
+  "serializer": "canon-json-v1",
+  "version": 1
+}

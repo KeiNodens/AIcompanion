@@ -1,0 +1,25 @@
+{
+  "name": "companion-body",
+  "version": "0.1.0",
+  "description": "Codex を companion（日本語AIコンパニオン）の第2身体にする。Core の記憶・技能・報告経路をローカル MCP 中継（mcp_stdio）経由で提供する",
+  "author": {
+    "name": "KeiNodens"
+  },
+  "license": "Proprietary",
+  "keywords": [
+    "companion",
+    "mcp",
+    "memory",
+    "skills"
+  ],
+  "mcpServers": "./.mcp.json",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Companion Body",
+    "shortDescription": "Codex を companion の身体として繋ぐ",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read"
+    ]
+  }
+}
